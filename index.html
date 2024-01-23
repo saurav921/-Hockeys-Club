@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hockeys Club p_hero assignment_03</title>
+</head>
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- google fonts -->
+<!-- tailwind & daisyUi -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- tailwind & daisyUi -->
+<!-- css files -->
+<link rel="stylesheet" href="css/all.min.css">
+<!-- css files -->
+<body class="font-[Manrope]">
+    <!-- header part start -->
+    <header>
+        <nav>
+            <div class="max-w-[1170px] mx-auto flex justify-between mt-12 mb-12 items-center">
+                <div class="hamburger lg:hidden">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <div class="logo">
+                    <h3 class="font-extrabold text-3xl">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+                </div>
+
+                <div class="menu">
+                    <ul class="flex gap-12 font-bold"> 
+                        <li class="text-[#FF4240]">Home</li>
+                        <li>About</li>
+                        <li>Pages</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+
+                <div class="custom_btn items-center">
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <button class="btn btn-error ml-6 text-xl font-bold text-white">Get Ticket</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- header part end -->
+    <!-- ==banner part start== -->
+    <section class="max-w-[1170px] mx-auto relative">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/Hockey.jpg" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/Hockey 03.jpg" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/Hockey04.jpg" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+        </div>
+        <div class="p-8 bg-black inline-block rounded-2xl absolute bottom-8 right-8">
+            <h3 class="text-2xl text-white font-bold">Meet all the heroes from the field</h3>
+            <p class="text-[#ffffff99] text-base font-medium mt-4">
+                Hockey is a term used to denote a family of various types <br> of both summer and winter team sports
+            </p>
+        </div>
+    </section>
+    <!-- ==banner part end== -->
+    <!-- ==Hockeys Club part start== -->
+    <main class="max-w-[1170px] mx-auto">
+        <section class="text-center pt-24 mb-24">
+            <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+            <p class="text-gray-600  text-base font-medium mt-6 mb-6">
+                Portage Lake Hockey Club in 1904, one of the first professional hockey clubs. <br>professional ice hockey club based in Bratislava, 
+            </p>
+            <div class="flex justify-center gap-6 mt-12">
+                <div>
+                    <div class="radial-progress text-red-600 rotate-180 font-extrabold" style="--value:60;" role="progressbar">
+                        <h3 class="rotate-180">60%</h3>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold mt-6 mb-4">Prayer Facility</h2>
+                    <p class="text-sm font-normal">We are at the forefront of world <br> youth hockey development.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#49D293] font-extrabold rotate-180" style="--value:96;" role="progressbar">
+                        <h3 class="rotate-180">96%</h3>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold mt-6 mb-4">Experienced Coach</h2>
+                    <p class="text-sm font-normal">We are at the forefront of world <br> youth hockey development.</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-yellow-500 rotate-180 font-extrabold " style="--value:90;" role="progressbar">
+                        <h3 class="rotate-180">90%</h3>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold mt-6 mb-4">Senior Player</h2>
+                    <p class="text-sm font-normal">With ten men’s teams, six ladies teams, <br>
+                            a mixed side, a range of youth teams`
+                    </p>
+                </div>
+                <div>
+                    <div class="radial-progress text-[#4C8DF1] rotate-180 font-extrabold " style="--value:100;" role="progressbar">
+                        <h3 class="rotate-180">100%</h3>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold mt-6 mb-4">Training Groundy</h2>
+                    <p class="text-sm font-normal">
+                        various touring sides and Back to Hockey sessions, <br>Woking Hockey Club offers hockey..
+                    </p>
+                </div>
+            </div>
+        </section>
+    <!-- ==Hockeys Club part end== -->
+
+    
+    </main>
+
+    
+        
+
+</body>
+</html>
