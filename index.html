@@ -20,22 +20,56 @@
 <body class="font-[Manrope]">
     <!-- header part start -->
     <header>
-        <nav>
-            <div class="max-w-[1170px] mx-auto flex justify-between mt-12 mb-12 items-center">
-                <div class="hamburger lg:hidden">
+        <!-- nav bar start -->
+        <div class="navbar bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+      </div>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Homepage</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="navbar-center">
+    <a class="btn btn-ghost text-xl">daisyUI</a>
+  </div>
+  <div class="navbar-end">
+    <button class="btn btn-ghost btn-circle">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+    </button>
+    <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+        <span class="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+  </div>
+</div>
+
+        <!-- nav bar end -->
+
+        <!-- <nav>
+            <div class="max-w-[1170px] mx-auto flex justify-between lg:mt-12 lg:mb-12 items-center sm:mt-6 sm:mb-6">
+                <div class="hamburger sm:text-2xl lg:hidden">
                     <i class="fa-solid fa-bars-staggered"></i>
                 </div>
                 <div class="logo">
-                    <h3 class="font-extrabold text-3xl">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+                    <a href="#">
+                        <h3 class="lg:font-extrabold text-3xl sm:text-2xl sm:font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h3>
+                    </a>
                 </div>
 
                 <div class="menu">
-                    <ul class="flex gap-12 font-bold"> 
-                        <li class="text-[#FF4240]">Home</li>
-                        <li>About</li>
-                        <li>Pages</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
+                    <ul class="flex gap-12 font-bold sm:hidden"> 
+                        <a href="#"><li class="text-[#FF4240]">Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Pages</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Contact</li></a>
                     </ul>
                 </div>
 
@@ -45,58 +79,64 @@
                 </div>
 
             </div>
-        </nav>
+        </nav> -->
     </header>
     <!-- header part end -->
     <!-- ==banner part start== -->
-    <section class="max-w-[1170px] mx-auto relative">
+    <section class="max-w-[1170px] mx-auto pl-5 pr-5 lg:relative">
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full h-[550px]" />
+              <img src="Images/1.png" class="w-full lg:h-[550px]" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="Images/Hockey.jpg" class="w-full h-[550px]" />
+              <img src="Images/Hockey.jpg" class="w-full lg:h-[550px]" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide3" class="carousel-item relative w-full">
-              <img src="Images/Hockey 03.jpg" class="w-full h-[550px]" />
+              <img src="Images/Hockey 03.jpg" class="w-full lg:h-[550px]" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
             <div id="slide4" class="carousel-item relative w-full">
-              <img src="Images/Hockey04.jpg" class="w-full h-[550px]" />
+              <img src="Images/Hockey04.jpg" class="w-full lg:h-[550px]" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
         </div>
-        <div class="p-8 bg-black inline-block rounded-2xl absolute bottom-8 right-8">
-            <h3 class="text-2xl text-white font-bold">Meet all the heroes from the field</h3>
-            <p class="text-[#ffffff99] text-base font-medium mt-4">
-                Hockey is a term used to denote a family of various types <br> of both summer and winter team sports
-            </p>
+
+        <div class="flex justify-center text-center mt-6">
+            <div class="p-8 bg-black inline-block rounded-2xl lg:absolute lg:bottom-8 lg:right-8">
+                <h3 class="lg:text-2xl text-white font-bold">Meet all the heroes from the field</h3>
+                <p class="text-[#ffffff99] text-base font-medium mt-4">
+                    Hockey is a term used to denote a family of various types <br> of both summer and winter team sports
+                </p>
+            </div>
         </div>
     </section>
     <!-- ==banner part end== -->
     <!-- ==Hockeys Club part start== -->
-    <main class="max-w-[1170px] mx-auto">
-        <section class="text-center pt-24 mb-24">
-            <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
-            <p class="text-gray-600  text-base font-medium mt-6 mb-6">
-                Portage Lake Hockey Club in 1904, one of the first professional hockey clubs. <br>professional ice hockey club based in Bratislava, 
-            </p>
-            <div class="flex justify-center gap-6 mt-12">
-                <div>
+    <main class="max-w-[1170px] mx-auto pl-5 pr-5">
+        <section class="text-center pt-24 mb-16">
+            <div class="text-center justify-center border-t-2  border-b-2 border-dashed pt-8 pb-8 mb-12">
+                <h2 class="text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-gray-600  text-base font-medium mt-6 mb-6">
+                    Portage Lake Hockey Club in 1904, one of the first professional hockey clubs. <br>professional ice hockey club based in Bratislava, 
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 justify-center gap-6">
+                <div class="mb-6 lg:mt-12 lg:mb-12">
                     <div class="radial-progress text-red-600 rotate-180 font-extrabold" style="--value:60;" role="progressbar">
                         <h3 class="rotate-180">60%</h3>
                     </div>
@@ -104,7 +144,7 @@
                     <h2 class="text-3xl font-semibold mt-6 mb-4">Prayer Facility</h2>
                     <p class="text-sm font-normal">We are at the forefront of world <br> youth hockey development.</p>
                 </div>
-                <div>
+                <div class="mb-6 mt-0 lg:mt-12 lg:mb-12">
                     <div class="radial-progress text-[#49D293] font-extrabold rotate-180" style="--value:96;" role="progressbar">
                         <h3 class="rotate-180">96%</h3>
                     </div>
@@ -112,7 +152,7 @@
                     <h2 class="text-3xl font-semibold mt-6 mb-4">Experienced Coach</h2>
                     <p class="text-sm font-normal">We are at the forefront of world <br> youth hockey development.</p>
                 </div>
-                <div>
+                <div class="mb-6 mt-0 lg:mt-12 lg:mb-12">
                     <div class="radial-progress text-yellow-500 rotate-180 font-extrabold " style="--value:90;" role="progressbar">
                         <h3 class="rotate-180">90%</h3>
                     </div>
@@ -122,7 +162,7 @@
                             a mixed side, a range of youth teams`
                     </p>
                 </div>
-                <div>
+                <div class="mb-6 mt-0 lg:mt-12 lg:mb-12">
                     <div class="radial-progress text-[#4C8DF1] rotate-180 font-extrabold " style="--value:100;" role="progressbar">
                         <h3 class="rotate-180">100%</h3>
                     </div>
@@ -136,77 +176,79 @@
         </section>
      <!-- ==Hockeys Club part end== -->
      <!-- program part start -->
-        <section class="mb-24">
-            <h2 class="text-4xl font-extrabold text-center">Program Sections</h2>
-            <p class="text-gray-600  text-base font-medium mt-6 mb-6 text-center">
+        <section>
+            <div class="text-center justify-center border-t-2  border-b-2 border-dashed pt-8 pb-8 mb-12">
+                <h2 class="text-2xl lg:text-4xl font-extrabold text-center">Program Sections</h2>
+                <p class="text-gray-600  text-base font-medium mt-6 mb-6 text-center">
                 Each day consists of two sessions 10am-12pm and 1pm-3pm. There is an hour’s break <br> for lunch in between sessions
-            </p>
-
-            <div class="flex gap-6">
-                <div class="bg-[url('/images/2.png')] bg-no-repeat bg-center bg-cover pt-24 pb-10 pl-10 pr-10 rounded-xl">
-                    <h3 class="text-3xl text-white font-extrabold">Junior Program</h3>
-                    <p class="text-base font-medium text-white mt-4 mb-6">
-                        Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
-                    </p>
-                    <button class="btn btn-error text-white">Register Now!</button>
-                </div>
-
-                <div class="bg-[url('/images/3.png')] bg-no-repeat bg-center bg-cover pt-24 pb-10 pl-10 pr-10 rounded-xl">
-                    <h3 class="text-3xl text-white font-extrabold">Junior Program</h3>
-                    <p class="text-base font-medium text-white mt-4 mb-6">
-                        Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
-                    </p>
-                    <button class="btn btn-error text-white">Register Now!</button>
-                </div>
-            </div>
-            <div class="bg-[url('/images/4.png')] bg-no-repeat bg-center bg-cover pt-52 pb-10 pl-10 pr-10 mt-6 rounded-xl">
-                <h3 class="text-3xl text-white font-extrabold">Junior Program</h3>
-                <p class="text-base font-medium text-white mt-4 mb-6">
-                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
                 </p>
-                <button class="btn btn-error text-white">Register Now!</button>
             </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12">
+                <div class="bg-[url('./images/2.png')] bg-no-repeat bg-center bg-cover pt-24 pb-10 pl-10 pr-10 rounded-xl">
+                    <h3 class="text-3xl text-white font-extrabold">Junior Program</h3>
+                    <p class="text-base font-medium text-white mt-4 mb-6">
+                        Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                    </p>
+                    <button class="btn btn-error text-white">Register Now!</button>
+                </div>
+
+                <div class="bg-[url('./images/3.png')] bg-no-repeat bg-center bg-cover pt-24 pb-10 pl-10 pr-10 rounded-xl">
+                    <h3 class="text-3xl text-white font-extrabold">Teenager Program</h3>
+                    <p class="text-base font-medium text-white mt-4 mb-6">
+                        Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+                    </p>
+                    <button class="btn btn-error text-white">Register Now!</button>
+                </div>
+            </div>
+                
+                <div class="bg-[url('./images/4.png')] bg-no-repeat bg-center bg-cover pt-52 pb-10 pl-10 pr-10 mt-6 rounded-xl lg:w-full">
+                    <h3 class="text-3xl text-white font-extrabold">Professional Program</h3>
+                    <p class="text-base font-medium text-white mt-4 mb-6">
+                        Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis <br> turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. <br> Tortor congue sed et in.
+                    </p>
+                    <button class="btn btn-error text-white">Register Now!</button>
+                </div>
         </section>
      <!-- program part end -->
      <!-- product part start -->
         <section>
-            <h2 class="text-4xl font-extrabold text-center" >Our New Products</h2>
-            <p class="text-gray-600  text-base font-medium mt-6 mb-6 text-center">
-                A term of many opinions and practices, but most generally defined as a product <br> (either a good or service) new to the firm marketing.
-            </p>
+            <div class="text-center justify-center border-t-2  border-b-2 border-dashed pt-8 pb-8 lg:mb-12 mt-10 lg:mt-24">
+                <h2 class="text-2xl lg:text-4xl font-extrabold text-center" >Our New Products</h2>
+                <p class="text-gray-600  text-base font-medium mt-6 mb-6 text-center">
+                    A term of many opinions and practices, but most generally defined as a product <br> (either a good or service) new to the firm marketing.
+                </p>
+            </div>
 
-            <div class="flex justify-between gap-6 mb-6">
-                <div class="card card-side bg-base-100 shadow-xl p-6 ">
-                    <figure><img src="Images/5.png" alt="Movie"/></figure>
+            <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="card card-side bg-base-100 shadow-xl p-6 flex flex-col lg:flex-none lg:flex-row">
+                    <figure><img class="w-full lg:w-48" src="Images/5.png" alt="Movie"/></figure>
                     <div class="card-body">
                         <div class="flex text-center gap-4">
-
                             <div class="left flex items-center">
                                 <i class="fa-solid fa-star mr-2 text-[#F99808]"></i>
                                 <p>5.0</p>
                             </div>
-                            
                             <div class="flex items-center">
                                 <i class="fa-solid fa-eye mr-2"></i>
                                 <p>20</p>
                             </div>
-
                             <div class="flex items-center">
                                 <i class="fa-regular fa-heart mr-2"></i>
                                 <p>200</p>
                             </div>
-
                         </div>
+
                       <h2 class="card-title">World Cup Flags Football</h2>
                       <p class="text-base font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
-                      <div class="flex gap-5">
+                      <div class="lg:flex gap-5">
                         <div>
                             <h6 class="text-lg font-extrabold text-[#FF4240]">Price - $22.00</h6>
                         </div>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-2 mt-4">
                             <i class="fa-solid fa-cart-plus"></i>
                             <p>Delivery Fee : Free</p>
                         </div>
@@ -214,6 +256,7 @@
                       
                     </div>
                 </div>
+
                 <div class="card card-side bg-base-100 shadow-xl p-6">
                     <figure><img src="Images/6.png" alt="Movie"/></figure>
                     <div class="card-body">
@@ -481,7 +524,7 @@
         </section>
      <!-- faq part end -->
      <!-- get in touch part start -->
-     <section>
+     <section class="hidden">
         <h2 class="text-4xl font-extrabold text-center" >Get In Touch</h2>
         <p class="text-gray-600  text-base font-medium mt-6 mb-6 text-center">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>dolor. Purus urna in sit nullam proin. 
@@ -544,8 +587,48 @@
             <i class="fa-brands fa-square-whatsapp ml-3"></i>
         </section>
      </section>
-     <!-- get in touch part end -->
     </main>
+    <!-- get in touch part end -->
+    <!-- footer part start -->
+    <footer class="bg-black pt-24 pb-24">
+        <main class="max-w-[1170px] mx-auto flex justify-between">
+            <div class="">
+                <h3 class="text-[30px] font-extrabold text-white">Get In Touch</h3>
+                <p class="mt-4 mb-6 text-gray-300">
+                    Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br>urna in sit nullam proin. 
+                </p>
+                <p class="text-gray-300 mb-4"><i class="fa-solid fa-square-envelope text-red-400"></i> hockeys@support.com</p>
+                <p class="text-gray-300"><i class="fa-solid fa-phone text-red-400"></i>  (+62) 123-321-543</p>
+            </div>
+
+            <div class="text-gray-400">
+                <h4 class="text-lg text-white font-bold mb-7">Company</h4>
+                <a href="#"><p>About us</p></a>
+                <a href="#"><p class="mt-2 mb-3">Leadership</p></a>
+                <a href="#"><p>Careers</p></a>
+                <a href="#"><p class="mt-2 mb-3">News & Article</p></a>
+                <a href="#"><p>Legal Notice</p></a>
+            </div>
+
+            <div class="text-gray-400">
+                <h4 class="text-lg text-white font-bold mb-7">Support</h4>
+                <a href="#"><p class="mt-2 mb-3">Help Center</p></a>
+                <a href="#"><p>FAQ</p></a>
+                <a href="#"><p class="mt-2 mb-3">Ticket Support</p></a>
+                <a href="#"><p>Contact Us</p></a>
+            </div>
+
+            <div class="text-gray-400">
+                <h4 class="text-lg text-white font-bold mb-7">Services</h4>
+                <a href="#"><p>Academy</p></a>
+                <a href="#"><p class="mt-2 mb-3">Group Lesson</p></a>
+                <a href="#"><p>Private Lesson</p></a>
+                <a href="#"><p class="mt-2 mb-3">Hockeys for kids</p></a>
+                <a href="#"><p>Hockeys for Adult</p></a>
+            </div>
+        </main>
+    </footer>
+    <!-- footer part end -->
 
     
         
